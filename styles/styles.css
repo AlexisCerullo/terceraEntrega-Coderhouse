@@ -173,20 +173,10 @@ nav ul a li {
     flex-direction: column;
 }
 
-.subtitulo {
+.subtitulo, .contenido p  {
     text-align: center;
-    font-size: 35px;
-    margin-top: 5%;
-}
-
-.contenido h1,
-.contenido p {
-    text-align: center;
-}
-
-.contenido h1 {
     font-size: 50px;
-    padding-top: 40px;
+    margin-top: 5%;
 }
 
 .contenido p {
