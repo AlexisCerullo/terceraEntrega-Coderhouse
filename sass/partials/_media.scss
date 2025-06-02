@@ -1,58 +1,60 @@
-@media (min-width: 768px) {
+@use './mixins' as m;
+
+@include m.tablet {
     .contenedor {
         width: 90%;
         margin: 0 auto;
     }
 }
 
-@media (min-width: 768px) {
+@include m.tablet {
     header {
         border: none;
     }
 }
 
-@media (min-width: 768px) {
+@include m.tablet {
     .contenedor-logo {
         width: 100%;
     }
 }
 
-@media (min-width: 480px) {
+@include m.telefono {
     .nombreLogo {
         display: none;
     }
 }
 
-@media (min-width: 768px) {
+@include m.tablet {
     .nombreLogo {
         text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include m.flex();
         font-size: 80px;
         width: 100%;
     }
 }
 
-@media (min-width: 768px) {
-    nav ul {
-        flex-direction: row;
+@include m.tablet {
+    nav {
+        ul {
+            flex-direction: row;
+        }
     }
 }
 
-@media (min-width: 768px) {
+@include m.tablet {
     .boton-hamburguesa {
         display: none;
     }
 }
 
-@media (min-width: 1024px) {
+@include m.desktop {
     .detalles {
         flex-direction: row;
     }
 }
 
-@media (min-width: 1024px) {
+@include m.desktop {
 
     .video,
     .direccion {
@@ -61,13 +63,13 @@
     }
 }
 
-@media (min-width: 1024px) {
+@include m.desktop {
     .video iframe {
         margin: 0;
     }
 }
 
-@media (min-width: 1024px) {
+@include m.desktop {
     .impresoras {
         flex-direction: row;
         justify-content: space-around;
@@ -80,19 +82,19 @@
     }
 }
 
-@media (min-width: 768px) {
+@include m.tablet {
     .impresora {
         min-height: 35vh;
     }
 }
 
-@media (min-width: 1024px) {
+@include m.desktop {
     .detalleImpresora {
         line-height: 25px;
     }
 }
 
-@media (min-width: 1024px) {
+@include m.desktop {
     .capacitacion {
         flex-direction: row;
         margin: 50px;
@@ -107,7 +109,7 @@
     }
 }
 
-@media (min-width: 1024px) {
+@include m.desktop {
     .contacto {
         flex-direction: row;
 
@@ -144,7 +146,7 @@
     }
 }
 
-@media (min-width: 1024px) {
+@include m.desktop {
     footer {
         flex-direction: row;
 

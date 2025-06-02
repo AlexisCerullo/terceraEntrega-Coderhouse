@@ -1,7 +1,7 @@
+@use './mixins' as m;
+
 .nosotros {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include m.flex(column);
     gap: 50px;
     margin: 0 10%;
 

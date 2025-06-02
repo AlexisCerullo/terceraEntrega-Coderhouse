@@ -1,10 +1,9 @@
 @use "./variables" as v;
+@use './mixins' as m;
 
 .impresoras {
-    display: flex;
-    flex-direction: column;
+    @include m.flex(column);
     flex-wrap: wrap;
-    align-items: center;
 
     .impresora {
         height: 50vh;
@@ -19,9 +18,7 @@
         }
 
         .textoImpresora {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include m.flex(column);
             border: solid v.$grisOscuro 1px;
             border-radius: 0 10% 10% 0;
             box-shadow: 5px 0 0 0 v.$grisOscuro;

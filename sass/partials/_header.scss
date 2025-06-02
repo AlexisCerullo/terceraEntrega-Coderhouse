@@ -1,13 +1,12 @@
 @use "./variables" as v;
+@use './mixins' as m;
 
 header {
     border-bottom: v.$grisOscuro 3px solid;
 }
 
 .titulo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    @include m.flex(row, space-evenly, center);
 
     .contenedor-logo {
         width: 100%;
@@ -25,9 +24,7 @@ header {
         width: 30%;
 
         .contenedor-boton-hamburguesa {
-            display: flex;
-            justify-content: center;
-            height: 100%;
+            @include m.flex();
 
             .boton-hamburguesa {
                 background-color: v.$celesteOscuro;
@@ -45,31 +42,30 @@ header {
 
 }
 
-nav ul {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    text-align: center;
+nav {
+    ul {
+        @include m.flex(column, normal, normal);
+        padding: 0;
+        text-align: center;
 
-    a {
-        width: 100%;
-        border: solid rgba(0, 0, 0, 0.5) 1px;
-        padding: 5px 0;
-        background-color: v.$celesteOscuro;
-        text-decoration: none;
+        a {
+            width: 100%;
+            border: solid rgba(0, 0, 0, 0.5) 1px;
+            padding: 5px 0;
+            background-color: v.$celesteOscuro;
+            text-decoration: none;
 
-        li {
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            list-style: none;
-            font-size: 25px;
-            color: v.$grisOscuro;
-        }
+            li {
+                height: 100%;
+                @include m.flex();
+                list-style: none;
+                font-size: 25px;
+                color: v.$grisOscuro;
+            }
 
-        &:hover {
-            background-color: v.$celesteClaro;
+            &:hover {
+                background-color: v.$celesteClaro;
+            }
         }
     }
 }
