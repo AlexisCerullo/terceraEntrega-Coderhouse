@@ -1,0 +1,169 @@
+@media (min-width: 768px) {
+    .contenedor {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        border: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .contenedor-logo {
+        width: 100%;
+    }
+}
+
+@media (min-width: 480px) {
+    .nombreLogo {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .nombreLogo {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 80px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    nav ul {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 768px) {
+    .boton-hamburguesa {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .detalles {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .video,
+    .direccion {
+        width: 50%;
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .video iframe {
+        margin: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .impresoras {
+        flex-direction: row;
+        justify-content: space-around;
+
+        .impresora {
+            min-height: 45vh;
+            width: 40%;
+            margin: 3% 0;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .impresora {
+        min-height: 35vh;
+    }
+}
+
+@media (min-width: 1024px) {
+    .detalleImpresora {
+        line-height: 25px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .capacitacion {
+        flex-direction: row;
+        margin: 50px;
+
+        img {
+            width: 40%;
+        }
+
+        .capacitacionDetalle {
+            margin: 0;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .contacto {
+        flex-direction: row;
+
+        .redesContacto {
+            width: 50%;
+
+            .redesImagenes {
+                flex-wrap: nowrap;
+
+                .red {
+                    width: 80%;
+                }
+            }
+        }
+
+        .formularioContacto {
+            width: 50%;
+
+            .formulario {
+                input {
+                    width: 50%;
+
+                    &[type=submit] {
+                        width: 30%;
+                    }
+                }
+
+                textarea {
+                    width: 80%;
+                    height: 20vh;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    footer {
+        flex-direction: row;
+
+        p {
+            padding-left: 5%;
+            margin: 0;
+        }
+
+        .redes {
+            padding-right: 3%;
+
+            p {
+                display: inline;
+                padding: 0;
+            }
+
+            .red {
+                width: 15%;
+            }
+        }
+    }
+}

@@ -1,0 +1,75 @@
+@use "./variables" as v;
+
+header {
+    border-bottom: v.$grisOscuro 3px solid;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    .contenedor-logo {
+        width: 100%;
+
+        a img {
+            border: solid rgba(0, 0, 0, 0.5) 2px;
+            background-color: v.$colorFondo;
+            border-radius: 50%;
+            width: 50%;
+            margin: 5%;
+        }
+    }
+
+    .navegacion-boton-hamburguesa {
+        width: 30%;
+
+        .contenedor-boton-hamburguesa {
+            display: flex;
+            justify-content: center;
+            height: 100%;
+
+            .boton-hamburguesa {
+                background-color: v.$celesteOscuro;
+                border: 2px solid;
+                width: 50%;
+                height: 25%;
+
+                .icono-boton-hamburguesa {
+                    width: 70%;
+                }
+            }
+
+        }
+    }
+
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+
+    a {
+        width: 100%;
+        border: solid rgba(0, 0, 0, 0.5) 1px;
+        padding: 5px 0;
+        background-color: v.$celesteOscuro;
+        text-decoration: none;
+
+        li {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style: none;
+            font-size: 25px;
+            color: v.$grisOscuro;
+        }
+
+        &:hover {
+            background-color: v.$celesteClaro;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+@use "./variables" as v;
+
+.impresoras {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .impresora {
+        height: 50vh;
+        border-radius: 15%;
+        display: flex;
+        margin: 5%;
+
+        img {
+            width: 50%;
+            border: solid v.$grisOscuro 1px;
+            border-radius: 10% 0 0 10%;
+        }
+
+        .textoImpresora {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: solid v.$grisOscuro 1px;
+            border-radius: 0 10% 10% 0;
+            box-shadow: 5px 0 0 0 v.$grisOscuro;
+
+            .nombreImpresora {
+                margin-top: 10%;
+                font-weight: bold;
+                font-size: 25px;
+                color: v.$celesteOscuro;
+                text-align: center;
+            }
+
+            .precioImpresora {
+                font-weight: bold;
+                font-size: 20px;
+                color: v.$verde;
+            }
+
+            .detalleImpresora {
+                text-align: center;
+                height: 100%;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}

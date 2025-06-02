@@ -1,0 +1,40 @@
+@use "./variables" as v;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: v.$colorFondo;
+}
+
+h1,
+h2,
+h3,
+.nombreLogo {
+    font-family: v.$fuente-titulos;
+}
+
+p,
+a,
+label,
+input {
+    font-family: v.$fuente-textos;
+}
+
+.contenedor {
+    background-color: v.$gris;
+}
+
+.subtitulo {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 5%;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+}
